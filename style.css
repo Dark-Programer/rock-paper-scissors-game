@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(190deg, #fcfcfc, #2885e3);
+}
+.container {
+  padding: 2rem 7rem;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.result-images {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 7rem;
+  justify-content: center;
+}
+
+.result-images img {
+  width: 100px;
+}
+
+.user-result img {
+  transform: rotate(90deg);
+}
+.cpu-result img {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+.result {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: contrast-ratio(black, #b6b6b6);
+  font-weight: 500;
+}
+
+.option-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.option-image {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.2s ease;
+}
+.option-image:hover,
+.option-image.active {
+  opacity: 1;
+}
+.option-image img {
+  width: 50px;
+  pointer-events: none;
+}
+.option-image p {
+  color: contrast-ratio(black, #b6b6b6);
+  font-weight: 500;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  pointer-events: none;
+}
