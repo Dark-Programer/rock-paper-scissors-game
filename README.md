@@ -4,6 +4,7 @@
     <h2>Project Overview</h2>
     <p>
       This repository contains a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript. The game allows users to play against the computer and displays the results based on the classic rules of Rock Paper Scissors.
+      The application is live and can be accessed at https://dark-programer.github.io/rock-paper-scissors-game
     </p>
   </section>
 
@@ -27,15 +28,17 @@
     <h2>Usage</h2>
     <p>
       Clone the repository to your local machine:
-      <pre><code>git clone &lt;repository-url&gt;</code></pre>
+      <pre><code>git clone &lt;https://github.com/Dark-Programer/rock-paper-scissors-game.git&gt;</code></pre>
       Open the index.html file in your web browser to start playing the game.
     </p>
   </section>
 
-  <section class="screenshots">
-    <h2>Screenshots</h2>
-    <!-- Add screenshots of the game interface here -->
-  </section>
+<h2>Screenshot</h2>
+
+  <img src="./Screenshots/image.png">
+  <img src="./Screenshots/image1.png">
+  <img src="./Screenshots/image2.png">
+  <img src="./Screenshots/image3.png">
 
 <h2>Author</h2>
     <p>Arka Chakraborty</p>
