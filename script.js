@@ -21,25 +21,17 @@ optionImages.forEach((image, index) => {
     let time = setTimeout(() => {
       // save the user clicked image source and
       userResult.src = e.target.querySelector("img").src;
+
       let userGuess = "-1";
-      if (
-        userResult.src ==
-        "http://127.0.0.1:5500/Projects/rock-paper-scissors/assets/rock.svg"
-      ) {
+      if (userResult.src.includes("rock.svg")) {
         userGuess = "0";
         console.log(`User: ${userGuess}`); // Rock
-      } else if (
-        userResult.src ==
-        "http://127.0.0.1:5500/Projects/rock-paper-scissors/assets/paper.avif"
-      ) {
+      } else if (userResult.src.includes("paper.avif")) {
         userGuess = "1";
         console.log(`User: ${userGuess}`); // Paper
-      } else if (
-        userResult.src ==
-        "http://127.0.0.1:5500/Projects/rock-paper-scissors/assets/scissors.svg"
-      ) {
+      } else if (userResult.src.includes("scissors.svg")) {
         userGuess = "2";
-        console.log(`User: ${userGuess}`); // Scissor
+        console.log(`User: ${userGuess}`); // Scissors
       }
 
       // generate a random value from 0 to 2 to store the computer guess
@@ -65,6 +57,11 @@ optionImages.forEach((image, index) => {
 
       // Creating all possible outcomes
       let outcomes = {
+        // Draw match
+        "00": "🤝 It's a draw! 🤝",
+        11: "🤝 It's a draw! 🤝",
+        22: "🤝 It's a draw! 🤝",
+
         // Rock (0) vs Scissors (2)
         "02": "🎊 Congrats, Champ! 🎊",
         20: "💪 Better luck next time! 😅",
